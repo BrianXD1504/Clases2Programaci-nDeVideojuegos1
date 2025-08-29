@@ -11,4 +11,10 @@ void draw() {
   fill(255, 0, 0); 
   noStroke() ;
   ellipse(x, y, 90, 90); 
+  
+   x += speed;
+   
+   if (x > width - 25 || x < 25) {
+    speed = speed * -1;
+  }
 }
